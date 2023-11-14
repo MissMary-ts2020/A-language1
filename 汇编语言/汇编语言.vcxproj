@@ -82,6 +82,12 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <MASM>
+      <GeneratePreprocessedSourceListing>true</GeneratePreprocessedSourceListing>
+    </MASM>
+    <MASM>
+      <ListAllAvailableInformation>true</ListAllAvailableInformation>
+    </MASM>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -129,6 +135,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <MASM Include="main.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vb.vbs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -19,4 +19,7 @@
       <Filter>源文件</Filter>
     </MASM>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="vb.vbs" />
+  </ItemGroup>
 </Project>
